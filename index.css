@@ -79,6 +79,8 @@ body {
   }
 
   .timer-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   .countdown-container {
     display: flex;

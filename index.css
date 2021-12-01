@@ -66,6 +66,13 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+  .date-container {
+    top: 20px;
+  }
+
+  .timer-container {
+    margin-top: 100px;
+  }
   .countdown-container {
     display: flex;
     flex-direction: column;

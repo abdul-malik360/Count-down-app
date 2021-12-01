@@ -67,7 +67,8 @@ body {
 
 @media screen and (max-width: 800px) {
   .date-container {
-    top: 20px;
+    top: 10px;
+    right: 20px;
   }
 
   .timer-container {

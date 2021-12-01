@@ -83,6 +83,6 @@ body {
   .countdown-container {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    margin-bottom: 50px;
   }
 }

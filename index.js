@@ -1,7 +1,11 @@
-mydate = "February 3, 2022";
-const dateOfDay = new Date(mydate).getTime();
-
 let i = setInterval(function () {
+  const displayDate = () => {
+    let x = document.getElementById("dateIput").value;
+    return x;
+  };
+
+  let mydate = displayDate();
+  const dateOfDay = new Date(mydate).getTime();
   const timeNow = new Date().getTime();
   const tillThen = dateOfDay - timeNow;
 
@@ -14,12 +18,12 @@ let i = setInterval(function () {
 
   const timerContainer = `
   <div class="timer-container">
-        <h1 class="countdown-heading"><i class="far fa-calendar-alt"></i>${mydate}</h1>
+        <h1 class="countdown-heading">Time left until<span class="countdown-heading-span"><i class="far fa-calendar-alt"></i>${mydate}</span></h1> 
         <div class="countdown-container">
-            <p class="container-item">Days <span class="container-span">${days}</span></p>
-            <p class="container-item">Hours <span class="container-span">${hours}</span></p>
-            <p class="container-item">Minutes <span class="container-span">${minutes}</span></p>
-            <p class="container-item">Seconds <span class="container-span">${seconds}</span></p>          
+            <p class="container-item">Days <span class="container-item-span">${days}</span></p>
+            <p class="container-item">Hours <span class="container-item-span">${hours}</span></p>
+            <p class="container-item">Minutes <span class="container-item-span">${minutes}</span></p>
+            <p class="container-item">Seconds <span class="container-item-span">${seconds}</span></p>          
         </div>
     </div>  
   `;

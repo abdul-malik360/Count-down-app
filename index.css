@@ -2,10 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
-  background-color: #e2ece9;
+  background-color: #f2d7ee;
+}
+.date-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  z-index: 1;
+}
+.date-label {
+  color: #0e103d;
+  font-size: 25px;
 }
 
 .timer-container {
@@ -15,8 +28,13 @@ body {
   align-items: center;
   min-height: 100vh;
 }
-
 .countdown-heading {
+  color: #0e103d;
+  font-size: 50px;
+}
+.countdown-heading-span {
+  margin: 10px;
+  color: #69306d;
 }
 
 .countdown-container {
@@ -29,13 +47,21 @@ body {
   flex-direction: column-reverse;
   margin: 15px;
   text-align: center;
+  color: #0e103d;
+  font-size: 25px;
 }
 
-.container-span {
-  background-color: #bee1e6;
-  padding: 50px;
+.container-item-span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d3bcc0;
   border-radius: 50%;
-  margin: 5px;
+  font-size: 30px;
+  color: #69306d;
+  width: 100px;
+  height: 100px;
+  text-align: center;
 }
 
 @media screen and (max-width: 800px) {

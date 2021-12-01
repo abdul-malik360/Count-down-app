@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Count Down Timer App</title>
+
+    <link rel="icon" href="/hour glass.png" type="image/icon type" />
 
     <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/footer.css" />
 
     <!-- fontawesome -->
     <script
@@ -15,7 +18,63 @@
     ></script>
   </head>
   <body>
+    <div class="date-container">
+      <label for="dateIput" class="date-label">Select Date:</label>
+      <input id="dateIput" class="date-input" type="date" />
+    </div>
+
     <div id="timer"></div>
+
+    <!-- footer -->
+    <footer>
+      <a
+        class="footer-contact-btn"
+        href="https://abdul-malik-portfolio.netlify.app/html/contact.html"
+        target="_blank"
+        >Let's Work Together</a
+      >
+
+      <a
+        class="footer-text footer-tooltip"
+        href="https://abdul-malik-portfolio.netlify.app/"
+        target="_blank"
+      >
+        <span class="footer-tooltip-text">Portfolio</span>
+        <i class="far fa-copyright"></i> Made by Abdul-Malik Mohamed</a
+      >
+
+      <div class="footer-links">
+        <a
+          class="footer-icon"
+          href="https://github.com/abdul-malik360"
+          target="_blank"
+        >
+          <i class="fab fa-github footer-tooltip">
+            <span class="footer-tooltip-text">Github</span>
+          </i>
+        </a>
+
+        <a
+          class="footer-icon"
+          href="https://codepen.io/abdul-malik360"
+          target="_blank"
+        >
+          <i class="fab fa-codepen footer-tooltip">
+            <span class="footer-tooltip-text">Codepen</span>
+          </i>
+        </a>
+
+        <a
+          class="footer-icon"
+          href="https://www.linkedin.com/in/abdul-malik-mohamed-5938bb214"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin-in footer-tooltip">
+            <span class="footer-tooltip-text">LinkedIn</span>
+          </i>
+        </a>
+      </div>
+    </footer>
 
     <script src="/index.js"></script>
   </body>
